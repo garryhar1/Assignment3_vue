@@ -40,19 +40,18 @@ export default {
   data() {
     return {
       bookingData: {
-        id: 1, // Initialize ID with 1
+        id: 1, 
         name: '',
         email: '',
         date: '',
         numberOfPeople: 1,
         specialRequests: ''
       },
-      submitted: false // Add a flag to track submission
+      submitted: false
     };
   },
   methods: {
     bookTable() {
-      // Increment ID before sending data
       this.bookingData.id++;
       
       fetch('http://localhost:5174/book', {
@@ -63,27 +62,24 @@ export default {
         body: JSON.stringify(this.bookingData)
       })
       .then(response => {
-        // Handle response
         console.log(response);
-        this.submitted = true; // Set submitted flag to true
-        this.resetForm(); // Reset form data
+        this.submitted = true; 
+        this.resetForm(); 
       })
       .catch(error => {
-        // Handle error
         console.error('Error:', error);
       });
     },
     resetForm() {
-      // Reset form data
       this.bookingData = {
-        id: this.bookingData.id, // Keep incremented ID
+        id: this.bookingData.id, 
         name: '',
         email: '',
         date: '',
         numberOfPeople: 1,
         specialRequests: ''
       };
-      this.submitted = false; // Reset submitted flag
+      this.submitted = false; 
     }
   }
 }
