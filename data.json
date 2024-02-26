@@ -1,0 +1,20 @@
+{
+  "book": [
+    {
+      "id": "2",
+      "name": "1234",
+      "email": "q345123@gmail.com",
+      "date": "4523-03-12",
+      "numberOfPeople": 1,
+      "specialRequests": "1234"
+    },
+    {
+      "id": 2,
+      "name": "34567",
+      "email": "12345@gmail.com",
+      "date": "0456-03-12",
+      "numberOfPeople": 11234,
+      "specialRequests": "234"
+    }
+  ]
+}
