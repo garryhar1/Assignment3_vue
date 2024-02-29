@@ -10,7 +10,6 @@ import { RouterLink, RouterView } from 'vue-router'
       <router-link to="/" class="nav-link">Home</router-link>
       <router-link to="/menu" class="nav-link">Menu</router-link>
       <router-link to="/book" class="button-link nav-link">Book</router-link>      
-      <!-- <router-link to="/new" class="button-link nav-link">new</router-link>             -->
     </div>
   </header>
   <router-view />
