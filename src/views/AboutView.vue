@@ -47,37 +47,14 @@
 </template>
 
 <script>
+import menuData from '../../data.json';
+
 export default {
   name: 'MenuList',
   data() {
     return {
-      selectedMenu: 'breakfast', // Default selected menu
-      menus: {
-        breakfast: [
-          { name: 'Pancakes', description: 'Fluffy pancakes served with maple syrup', price: '$8', image: 'https://picsum.photos/200/300' },
-          { name: 'Eggs Benedict', description: 'Poached eggs with hollandaise sauce on English muffin', price: '$10', image: 'https://picsum.photos/200/300' },
-          { name: 'Avocado Toast', description: 'Sourdough toast topped with smashed avocado', price: '$9', image: 'https://picsum.photos/200/300' },
-          { name: 'Waffles', description: 'Golden brown waffles served with fresh berries', price: '$8', image: 'https://picsum.photos/200/300' },
-          { name: 'French Toast', description: 'Classic French toast topped with powdered sugar', price: '$9', image: 'https://picsum.photos/200/300' },
-          { name: 'Omelette', description: 'Fluffy omelette with your choice of fillings', price: '$10', image: 'https://picsum.photos/200/300' },
-          ],
-        lunch: [
-          { name: 'Caesar Salad', description: 'Romaine lettuce with Caesar dressing and croutons', price: '$12', image: 'https://picsum.photos/200/300' },
-          { name: 'Grilled Chicken Sandwich', description: 'Grilled chicken breast with lettuce, tomato, and mayo', price: '$14', image: 'https://picsum.photos/200/300' },
-          { name: 'Vegetable Wrap', description: 'Assorted vegetables wrapped in a tortilla', price: '$11', image: 'https://picsum.photos/200/300' },
-          { name: 'Burger', description: 'Juicy beef patty with cheese, lettuce, and tomato', price: '$13', image: 'https://picsum.photos/200/300' },
-          { name: 'Club Sandwich', description: 'Triple-decker sandwich with turkey, bacon, lettuce, and tomato', price: '$15', image: 'https://picsum.photos/200/300' },
-          { name: 'Soup of the Day', description: 'Homemade soup made with fresh ingredients', price: '$10', image: 'https://picsum.photos/200/300' }
-        ],
-        dinner: [
-          { name: 'Steak', description: 'Grilled sirloin steak served with mashed potatoes and vegetables', price: '$25', image: 'https://picsum.photos/200/300' },
-          { name: 'Salmon', description: 'Pan-seared salmon fillet with lemon butter sauce', price: '$22', image: 'https://picsum.photos/200/300' },
-          { name: 'Pasta Primavera', description: 'Pasta with assorted vegetables in a creamy sauce', price: '$18', image: 'https://picsum.photos/200/300' },
-          { name: 'Roast Chicken', description: 'Herb-roasted chicken served with roasted potatoes', price: '$20', image: 'https://picsum.photos/200/300' },
-          { name: 'Shrimp Scampi', description: 'Shrimp sautéed in garlic butter and white wine sauce', price: '$24', image: 'https://picsum.photos/200/300' },
-          { name: 'Vegetarian Stir-Fry', description: 'Assorted vegetables stir-fried in a savory sauce', price: '$16', image: 'https://picsum.photos/200/300' }
-        ]
-      },
+      selectedMenu: 'breakfast', 
+      menus: menuData.menus,
       itemsPerPage: 6,
       currentPage: 0
     };
