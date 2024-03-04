@@ -55,7 +55,7 @@ header {
 
 .button-link {
   padding: 2px 10px;
-  background-color: #a40518; /* Green */
+  background-color: #a40518; 
   color: white;
   text-align: center;
   text-decoration: none;
