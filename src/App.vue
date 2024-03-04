@@ -9,8 +9,8 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="nav-links">
       <router-link to="/" class="nav-link">Home</router-link>
       <!-- <router-link to="/menu" class="nav-link">Menu</router-link> -->
-      <router-link to="/book" class="button-link nav-link">Book</router-link>      
       <router-link to="/new" class="button-link nav-link">New Menu</router-link>      
+      <router-link to="/book" class="button-link nav-link">Book</router-link>      
 
     </div>
   </header>

@@ -349,21 +349,21 @@ export default {
 }
 
 .add-menu-btn {
-  background-color: black; /* Warna latar hijau */
-  color: white; /* Warna teks putih */
-  padding: 15px 25px; /* Padding */
-  border: none; /* Tanpa border */
-  border-radius: 5px; /* Sudut bulat */
-  cursor: pointer; /* Pointer cursor saat dihover */
-  transition: background-color 0.3s; /* Transisi smooth untuk perubahan warna latar */
+  background-color: black; 
+  color: white; 
+  padding: 10px 15px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
 }
 
 .add-menu-btn:hover {
-  background-color: transparent; /* Warna latar sedikit lebih gelap saat dihover */
+  background-color: transparent; 
 }
 
 .update-menu-btn {
-  background-color: blue;
+  background-color: black;
   color: white;
   padding: 5px 10px;
   border: none;
